@@ -51,6 +51,10 @@
             android:id="@+id/action_FirstFragment_to_PopBackInterceptFragment"
             app:destination="@id/PopBackInterceptFragment" />
 
+        <action
+            android:id="@+id/action_FirstFragment_to_OkhttpFragment"
+            app:destination="@id/OkhttpFragment" />
+
     </fragment>
     <fragment
         android:id="@+id/SecondFragment"
@@ -117,6 +121,13 @@
         android:name="com.example.basicviewsactivitydemo.PopBackInterceptFragment"
         android:label="@string/pop_back_intercept_fragment_label"
         tools:layout="@layout/fragment_pop_back_intercept">
+    </fragment>
+
+    <fragment
+        android:id="@+id/OkhttpFragment"
+        android:name="com.example.basicviewsactivitydemo.OkhttpFragment"
+        android:label="@string/okhttp_fragment_label"
+        tools:layout="@layout/fragment_okhttp">
     </fragment>
 
 </navigation>

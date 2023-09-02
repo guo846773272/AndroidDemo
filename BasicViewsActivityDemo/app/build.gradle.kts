@@ -54,4 +54,10 @@ dependencies {
     androidTestImplementation("androidx.test.ext:junit:1.1.5")
     androidTestImplementation("androidx.test.espresso:espresso-core:3.5.1")
     implementation("com.github.hackware1993:MagicIndicator:1.7.0") // for androidx
+
+    implementation(platform("com.squareup.okhttp3:okhttp-bom:4.11.0"))
+
+    // define any required OkHttp artifacts without version
+    implementation("com.squareup.okhttp3:okhttp")
+    implementation("com.squareup.okhttp3:logging-interceptor")
 }

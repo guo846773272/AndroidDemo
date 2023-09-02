@@ -160,6 +160,13 @@ class FirstFragment : Fragment() {
             }
             mArr.add(model7)
 
+            val model8 = FirstRecyclerViewCellModel()
+            model8.str = "okhttp"
+            model8.didClickCallback = {
+                it.findNavController().navigate(R.id.action_FirstFragment_to_OkhttpFragment)
+            }
+            mArr.add(model8)
+
         }
 
         binding.recyclerView.adapter = FirstRecyclerViewAdapter(mArr.toTypedArray())

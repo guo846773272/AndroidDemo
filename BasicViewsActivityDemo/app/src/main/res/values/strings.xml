@@ -9,6 +9,7 @@
     <string name="tab_layout_view_pager_2_fragment_label">Tab Layout View Pager 2 Fragment</string>
     <string name="recycler_view_header_footer_fragment_label">Recycler View Header Footer Fragment</string>
     <string name="pop_back_intercept_fragment_label">Pop Back Intercept Fragment</string>
+    <string name="okhttp_fragment_label">Okhttp Fragment</string>
     <string name="view_pager_2_fragment_label">View Pager 2 Fragment</string>
     <string name="grid_layout_fragment_label">Grid Layout Fragment</string>
     <string name="second_fragment_label">Second Fragment</string>
