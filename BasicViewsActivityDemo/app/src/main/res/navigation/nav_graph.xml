@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/FirstFragment">
+
+    <fragment
+        android:id="@+id/FirstFragment"
+        android:name="com.example.basicviewsactivitydemo.FirstFragment"
+        android:label="@string/first_fragment_label"
+        tools:layout="@layout/fragment_first">
+
+        <action
+            android:id="@+id/action_FirstFragment_to_SecondFragment"
+            app:destination="@id/SecondFragment" />
+
+        <action
+            android:id="@+id/action_FirstFragment_to_ViewPager2Fragment"
+            app:destination="@id/ViewPager2Fragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim" />
+
+        <action
+            android:id="@+id/action_FirstFragment_to_GridLayoutFragment"
+            app:destination="@id/GridLayoutFragment" />
+
+        <action
+            android:id="@+id/action_FirstFragment_to_RecyclerViewGridLayoutFragment"
+            app:destination="@id/RecyclerViewGridLayoutFragment" />
+
+        <action
+            android:id="@+id/action_FirstFragment_to_ScrollViewFragment"
+            app:destination="@id/ScrollViewFragment" />
+
+        <action
+            android:id="@+id/action_FirstFragment_to_MagicIndicatorFragment"
+            app:destination="@id/MagicIndicatorFragment" />
+
+        <action
+            android:id="@+id/action_FirstFragment_to_TabLayoutViewPager2Fragment"
+            app:destination="@id/TabLayoutViewPager2Fragment" />
+
+        <action
+            android:id="@+id/action_FirstFragment_to_RecyclerViewHeaderFooterFragment"
+            app:destination="@id/RecyclerViewHeaderFooterFragment" />
+
+        <action
+            android:id="@+id/action_FirstFragment_to_PopBackInterceptFragment"
+            app:destination="@id/PopBackInterceptFragment" />
+
+    </fragment>
+    <fragment
+        android:id="@+id/SecondFragment"
+        android:name="com.example.basicviewsactivitydemo.SecondFragment"
+        android:label="@string/second_fragment_label"
+        tools:layout="@layout/fragment_second">
+
+        <action
+            android:id="@+id/action_SecondFragment_to_FirstFragment"
+            app:destination="@id/FirstFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/ViewPager2Fragment"
+        android:name="com.example.basicviewsactivitydemo.ViewPager2Fragment"
+        android:label="@string/view_pager_2_fragment_label"
+        tools:layout="@layout/fragment_view_pager2">
+    </fragment>
+
+    <fragment
+        android:id="@+id/GridLayoutFragment"
+        android:name="com.example.basicviewsactivitydemo.GridLayoutFragment"
+        android:label="@string/view_pager_2_fragment_label"
+        tools:layout="@layout/fragment_grid_layout">
+    </fragment>
+
+    <fragment
+        android:id="@+id/RecyclerViewGridLayoutFragment"
+        android:name="com.example.basicviewsactivitydemo.RecyclerViewGridLayoutFragment"
+        android:label="@string/recycler_view_grid_layout_fragment_label"
+        tools:layout="@layout/fragment_recycler_view_grid_layout">
+    </fragment>
+
+    <fragment
+        android:id="@+id/ScrollViewFragment"
+        android:name="com.example.basicviewsactivitydemo.ScrollViewFragment"
+        android:label="@string/scroll_view_fragment_label"
+        tools:layout="@layout/fragment_scroll_view">
+    </fragment>
+
+    <fragment
+        android:id="@+id/MagicIndicatorFragment"
+        android:name="com.example.basicviewsactivitydemo.MagicIndicatorFragment"
+        android:label="@string/magic_indicator_fragment_label"
+        tools:layout="@layout/fragment_magic_indicator">
+    </fragment>
+
+    <fragment
+        android:id="@+id/TabLayoutViewPager2Fragment"
+        android:name="com.example.basicviewsactivitydemo.TabLayoutViewPager2Fragment"
+        android:label="@string/tab_layout_view_pager_2_fragment_label"
+        tools:layout="@layout/fragment_tab_layout_view_pager2">
+    </fragment>
+
+    <fragment
+        android:id="@+id/RecyclerViewHeaderFooterFragment"
+        android:name="com.example.basicviewsactivitydemo.RecyclerViewHeaderFooterFragment"
+        android:label="@string/recycler_view_header_footer_fragment_label"
+        tools:layout="@layout/fragment_recycler_view_header_footer">
+    </fragment>
+
+    <fragment
+        android:id="@+id/PopBackInterceptFragment"
+        android:name="com.example.basicviewsactivitydemo.PopBackInterceptFragment"
+        android:label="@string/pop_back_intercept_fragment_label"
+        tools:layout="@layout/fragment_pop_back_intercept">
+    </fragment>
+
+</navigation>
