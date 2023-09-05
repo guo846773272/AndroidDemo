@@ -56,7 +56,6 @@ class FirstRecyclerViewAdapter(var dataArray: Array<FirstRecyclerViewCellModel>)
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): RecyclerView.ViewHolder {
-        LayoutInflater.from(parent.context).inflate(R.layout.grid_layout_item, parent, false)
         val cell = LayoutInflater.from(parent.context).inflate(R.layout.first_recycler_view_cell, parent, false)
         return FirstRecyclerViewViewHolder(cell)
     }
@@ -166,6 +165,13 @@ class FirstFragment : Fragment() {
                 it.findNavController().navigate(R.id.action_FirstFragment_to_OkhttpFragment)
             }
             mArr.add(model8)
+
+            val model9 = FirstRecyclerViewCellModel()
+            model9.str = "SmartRefreshLayout"
+            model9.didClickCallback = {
+                it.findNavController().navigate(R.id.action_FirstFragment_to_SmartRefreshLayoutFragment)
+            }
+            mArr.add(model9)
 
         }
 

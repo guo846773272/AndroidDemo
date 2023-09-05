@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SmartRefreshLayoutFragment">
+
+    <com.scwang.smart.refresh.layout.SmartRefreshLayout
+        android:id="@+id/refreshLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:srlAccentColor="#fff"
+        app:srlPrimaryColor="#444"
+        app:srlEnablePreviewInEditMode="false"
+        app:srlFooterTranslationViewId="@+id/scrollView"
+        app:srlEnableLoadMoreWhenContentNotFull="true">
+
+        <com.scwang.smart.refresh.header.ClassicsHeader
+            android:id="@+id/classicsHeader"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:srlAccentColor="@color/purple_200"
+            app:srlPrimaryColor="@color/purple_500"
+            app:srlTextPulling="下拉可以刷新"
+            app:srlTextRefreshing="正在刷新..."
+            app:srlTextRelease="释放以刷新"
+            app:srlTextFinish="刷新完成"
+            app:srlTextFailed="刷新失败"
+            app:srlTextUpdate="上次更新 MM-dd HH:mm"
+            app:srlDrawableArrow="@drawable/ic_launcher_background"
+            app:srlDrawableProgress="@drawable/ic_launcher_foreground" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            android:overScrollMode="never"
+             />
+
+        <com.scwang.smart.refresh.footer.ClassicsFooter
+            android:id="@+id/classicsFooter"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:srlAccentColor="@color/red"
+            app:srlPrimaryColor="@color/teal_200"
+            app:srlTextPulling="上拉加载更多"
+            app:srlTextLoading="正在加载..."
+            app:srlTextRelease="释放以加载更多"
+            app:srlTextFinish="加载完成"
+            app:srlTextFailed="加载失败" />
+
+    </com.scwang.smart.refresh.layout.SmartRefreshLayout>
+
+</LinearLayout>

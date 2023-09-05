@@ -29,6 +29,16 @@
                                 <LayoutPositions />
                               </value>
                             </entry>
+                            <entry key="action_FirstFragment_to_OkhttpFragment">
+                              <value>
+                                <LayoutPositions />
+                              </value>
+                            </entry>
+                            <entry key="action_FirstFragment_to_PopBackInterceptFragment">
+                              <value>
+                                <LayoutPositions />
+                              </value>
+                            </entry>
                             <entry key="action_FirstFragment_to_RecyclerViewGridLayoutFragment">
                               <value>
                                 <LayoutPositions />
@@ -45,6 +55,11 @@
                               </value>
                             </entry>
                             <entry key="action_FirstFragment_to_SecondFragment">
+                              <value>
+                                <LayoutPositions />
+                              </value>
+                            </entry>
+                            <entry key="action_FirstFragment_to_SmartRefreshLayoutFragment">
                               <value>
                                 <LayoutPositions />
                               </value>
@@ -88,6 +103,30 @@
                       </LayoutPositions>
                     </value>
                   </entry>
+                  <entry key="OkhttpFragment">
+                    <value>
+                      <LayoutPositions>
+                        <option name="myPosition">
+                          <Point>
+                            <option name="x" value="12" />
+                            <option name="y" value="12" />
+                          </Point>
+                        </option>
+                      </LayoutPositions>
+                    </value>
+                  </entry>
+                  <entry key="PopBackInterceptFragment">
+                    <value>
+                      <LayoutPositions>
+                        <option name="myPosition">
+                          <Point>
+                            <option name="x" value="12" />
+                            <option name="y" value="12" />
+                          </Point>
+                        </option>
+                      </LayoutPositions>
+                    </value>
+                  </entry>
                   <entry key="RecyclerViewGridLayoutFragment">
                     <value>
                       <LayoutPositions>
@@ -106,6 +145,18 @@
                         <option name="myPosition">
                           <Point>
                             <option name="x" value="256" />
+                            <option name="y" value="12" />
+                          </Point>
+                        </option>
+                      </LayoutPositions>
+                    </value>
+                  </entry>
+                  <entry key="SFragment">
+                    <value>
+                      <LayoutPositions>
+                        <option name="myPosition">
+                          <Point>
+                            <option name="x" value="12" />
                             <option name="y" value="12" />
                           </Point>
                         </option>

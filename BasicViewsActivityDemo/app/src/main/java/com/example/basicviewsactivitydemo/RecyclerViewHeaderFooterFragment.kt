@@ -22,129 +22,6 @@ class RecyclerViewChildModel {
     var dataArr: Array<FirstRecyclerViewCellModel>? = null
 }
 
-//class RecyclerViewHeaderFooterAdapter(var recyclerViewChildModelArr: Array<RecyclerViewChildModel>): RecyclerView.Adapter<RecyclerView.ViewHolder>() {
-//    class RecyclerViewHeaderFooterViewHolder(itemView: View): RecyclerView.ViewHolder(itemView) {
-//        private val textView: TextView = itemView.findViewById(R.id.textView)
-//        var model: FirstRecyclerViewCellModel = FirstRecyclerViewCellModel()
-//            set(value) {
-//                textView.text = value.str
-//                field = value
-//            }
-//        init {
-//            itemView.setOnClickListener {
-////                model?.didClickCallback?.let { it1 -> it1(itemView) }
-//            }
-//        }
-//    }
-//
-//    override fun getItemViewType(position: Int): Int {
-//        val recyclerViewChildModel = recyclerViewChildModelArr[position]
-//        return recyclerViewChildModel.childViewType as Int
-//    }
-//    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): RecyclerView.ViewHolder {
-//        if (viewType == RecyclerViewChildViewType.HEADER.value) {
-//            val cell = LayoutInflater.from(parent.context).inflate(R.layout.fragment_recycler_view_header, parent, false)
-//            return RecyclerViewHeaderFooterViewHolder(cell)
-//        } else if (viewType == RecyclerViewChildViewType.FOOTER.value) {
-//            val cell = LayoutInflater.from(parent.context).inflate(R.layout.fragment_recycler_view_footer, parent, false)
-//            return RecyclerViewHeaderFooterViewHolder(cell)
-//        } else {
-//            val cell = LayoutInflater.from(parent.context).inflate(R.layout.first_recycler_view_cell, parent, false)
-//            return RecyclerViewHeaderFooterViewHolder(cell)
-//        }
-//    }
-//
-//    override fun getItemCount(): Int {
-//        var count = 0
-//        recyclerViewChildModelArr.forEach {
-//            if (it.childViewType == RecyclerViewChildViewType.HEADER) {
-//                count = count + 1
-//            } else if (it.childViewType == RecyclerViewChildViewType.FOOTER) {
-//                it.dataArr?.let {
-//                    count = count + it.size
-//                }
-//            } else {
-//                count = count + 1
-//            }
-//        }
-//        return count
-//    }
-//
-//    override fun onBindViewHolder(holder: RecyclerView.ViewHolder, position: Int) {
-//        val recyclerViewChildModel = recyclerViewChildModelArr[position]
-//        if (recyclerViewChildModel.childViewType == RecyclerViewChildViewType.MAIN_CELL) {
-//            recyclerViewChildModel.dataArr?.let {
-//                if (holder is RecyclerViewHeaderFooterViewHolder)
-//                    holder.model = it[position]
-//            }
-//        }
-//    }
-//
-//}
-
-
-//class RecyclerViewHeaderFooterAdapter(var dataArray: Array<FirstRecyclerViewCellModel>): RecyclerView.Adapter<RecyclerView.ViewHolder>() {
-//
-//    class FirstRecyclerViewViewHolder(itemView: View): RecyclerView.ViewHolder(itemView) {
-//
-////        private val textView: TextView = itemView.findViewById(R.id.textView)
-//        var model: FirstRecyclerViewCellModel = FirstRecyclerViewCellModel()
-//            set(value) {
-////                textView.text = value.str
-//                field = value
-//            }
-//        init {
-//            itemView.setOnClickListener {
-////                model?.didClickCallback?.let { it1 -> it1(itemView) }
-//            }
-//        }
-//    }
-//
-//    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): RecyclerView.ViewHolder {
-//        if (viewType === RecyclerViewChildViewType.HEADER.value) {
-//            val cell = LayoutInflater.from(parent.context).inflate(com.example.basicviewsactivitydemo.R.layout.recycler_view_header, parent, false)
-//            return FirstRecyclerViewViewHolder(cell)
-//        } else if (viewType === RecyclerViewChildViewType.FOOTER.value) {
-//            val cell = LayoutInflater.from(parent.context).inflate(com.example.basicviewsactivitydemo.R.layout.recycler_view_header, parent, false)
-//            return FirstRecyclerViewViewHolder(cell)
-//        } else {
-//            val cell = LayoutInflater.from(parent.context).inflate(com.example.basicviewsactivitydemo.R.layout.first_recycler_view_cell, parent, false)
-//            return FirstRecyclerViewViewHolder(cell)
-//        }
-//
-////        val cell = LayoutInflater.from(parent.context).inflate(com.example.basicviewsactivitydemo.R.layout.first_recycler_view_cell, parent, false)
-////        return FirstRecyclerViewAdapter.FirstRecyclerViewViewHolder(cell)
-//    }
-//
-//    override fun getItemViewType(position: Int): Int {
-//        if (position == 0) {
-//            return RecyclerViewChildViewType.HEADER.value;
-//        } else if(position==dataArray.size+1){
-//            return RecyclerViewChildViewType.FOOTER.value;
-//        }else {
-//            return RecyclerViewChildViewType.MAIN_CELL.value;
-//
-//        }
-//    }
-//
-//    override fun getItemCount(): Int {
-//        return dataArray.size + 1
-//    }
-//
-//    override fun onBindViewHolder(holder: RecyclerView.ViewHolder, position: Int) {
-//        if (position == 0) {
-//
-//        } else if (position == dataArray.size + 1) {
-//
-//        } else {
-//            if (holder is FirstRecyclerViewViewHolder) {
-//                holder.model = dataArray[position]
-//            }
-//        }
-//    }
-//
-//}
-
 class RecyclerViewHeaderFooterAdapter(var dataArray: Array<FirstRecyclerViewCellModel>): RecyclerView.Adapter<RecyclerView.ViewHolder>() {
 
     class FirstRecyclerViewViewHolder(itemView: View): RecyclerView.ViewHolder(itemView) {
@@ -183,19 +60,6 @@ class RecyclerViewHeaderFooterAdapter(var dataArray: Array<FirstRecyclerViewCell
     }
 
     override fun onBindViewHolder(holder: RecyclerView.ViewHolder, position: Int) {
-//        if (holder is FirstRecyclerViewViewHolder) {
-//            holder.model = dataArray[position]
-//        }
-//        if (position == 0) {
-//            if (holder is FirstRecyclerViewViewHolder) {
-//                holder.model = dataArray[position]
-//            }
-//        }
-//        if (position == dataArray.size + 1) {
-//            if (holder is FirstRecyclerViewViewHolder) {
-//                holder.model = dataArray[position]
-//            }
-//        }
         if (position == 0 || position == dataArray.size + 1) {
             return
         }
@@ -203,7 +67,6 @@ class RecyclerViewHeaderFooterAdapter(var dataArray: Array<FirstRecyclerViewCell
             holder.model = dataArray[position - 1]
         }
     }
-
 }
 
 

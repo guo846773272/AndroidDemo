@@ -55,6 +55,10 @@
             android:id="@+id/action_FirstFragment_to_OkhttpFragment"
             app:destination="@id/OkhttpFragment" />
 
+        <action
+            android:id="@+id/action_FirstFragment_to_SmartRefreshLayoutFragment"
+            app:destination="@id/SmartRefreshLayoutFragment" />
+
     </fragment>
     <fragment
         android:id="@+id/SecondFragment"
@@ -128,6 +132,13 @@
         android:name="com.example.basicviewsactivitydemo.OkhttpFragment"
         android:label="@string/okhttp_fragment_label"
         tools:layout="@layout/fragment_okhttp">
+    </fragment>
+
+    <fragment
+        android:id="@+id/SmartRefreshLayoutFragment"
+        android:name="com.example.basicviewsactivitydemo.SmartRefreshLayoutFragment"
+        android:label="@string/smart_refresh_layout_fragment_label"
+        tools:layout="@layout/fragment_smart_refresh_layout">
     </fragment>
 
 </navigation>

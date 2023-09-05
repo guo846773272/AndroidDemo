@@ -60,4 +60,8 @@ dependencies {
     // define any required OkHttp artifacts without version
     implementation("com.squareup.okhttp3:okhttp")
     implementation("com.squareup.okhttp3:logging-interceptor")
+
+    //SmartRefreshLayout
+    implementation("io.github.scwang90:refresh-layout-kernel:2.0.6")      //核心必须依赖
+    implementation("io.github.scwang90:refresh-header-classics:2.0.6")    //经典刷新头
 }
