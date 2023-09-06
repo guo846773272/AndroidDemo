@@ -11,6 +11,7 @@
     <string name="pop_back_intercept_fragment_label">Pop Back Intercept Fragment</string>
     <string name="okhttp_fragment_label">Okhttp Fragment</string>
     <string name="smart_refresh_layout_fragment_label">Smart Refresh Layout Fragment</string>
+    <string name="gson_fragment_label">Gson Fragment</string>
     <string name="view_pager_2_fragment_label">View Pager 2 Fragment</string>
     <string name="grid_layout_fragment_label">Grid Layout Fragment</string>
     <string name="second_fragment_label">Second Fragment</string>

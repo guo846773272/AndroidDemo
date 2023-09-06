@@ -138,10 +138,17 @@ class FirstFragment : Fragment() {
             }
             mArr.add(model4)
 
+//            val model5 = FirstRecyclerViewCellModel()
+//            model5.str = "MagicIndicator"
+//            model5.didClickCallback = {
+//                it.findNavController().navigate(R.id.action_FirstFragment_to_MagicIndicatorFragment)
+//            }
+//            mArr.add(model5)
+
             val model5 = FirstRecyclerViewCellModel()
-            model5.str = "MagicIndicator"
+            model5.str = "Gson"
             model5.didClickCallback = {
-                it.findNavController().navigate(R.id.action_FirstFragment_to_MagicIndicatorFragment)
+                it.findNavController().navigate(R.id.action_FirstFragment_to_GsonFragment)
             }
             mArr.add(model5)
 
