@@ -1,5 +1,6 @@
 package com.example.basicviewsactivitydemo
 
+import android.graphics.Color
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
@@ -10,6 +11,8 @@ import androidx.fragment.app.FragmentPagerAdapter
 import androidx.viewpager2.adapter.FragmentStateAdapter
 import com.example.basicviewsactivitydemo.databinding.FragmentFirstBinding
 import com.example.basicviewsactivitydemo.databinding.FragmentTabLayoutViewPager2Binding
+import com.google.android.material.tabs.TabLayout
+import com.google.android.material.tabs.TabLayout.Tab
 import com.google.android.material.tabs.TabLayoutMediator
 
 class MyFragmentStateAdapter(fragment: Fragment) : FragmentStateAdapter(fragment) {
@@ -57,6 +60,27 @@ class TabLayoutViewPager2Fragment : Fragment() {
 
         val tabLayout = binding.tabLayout
         val viewPager2 = binding.viewPager2
+
+        tabLayout.addOnTabSelectedListener(object: TabLayout.OnTabSelectedListener {
+            override fun onTabSelected(tab: TabLayout.Tab?) {
+                // 获取点击的选项卡视图
+                val tabView = tab?.view
+                // 设置背景色为红色
+                tabView?.setBackgroundColor(Color.BLUE)
+            }
+
+            override fun onTabUnselected(tab: TabLayout.Tab?) {
+                // 当选项卡取消选中时，你可以在这里设置其他状态的背景色
+                val tabView = tab?.view
+                tabView?.setBackgroundColor(Color.RED)
+            }
+
+            override fun onTabReselected(tab: TabLayout.Tab?) {
+                // 当选项卡被重新选中时，你可以在这里执行其他操作
+                val tabView = tab?.view
+                tabView?.setBackgroundColor(Color.CYAN)
+            }
+        })
 
 
         val adapter = MyFragmentStateAdapter(this)

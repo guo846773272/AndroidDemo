@@ -40,11 +40,9 @@ class OkhttpFragment : Fragment() {
 
         run()
     }
-
-
     fun run() {
         val request = Request.Builder()
-            .url("http://publicobject.com/helloworld.txt")
+            .url("http://127.0.0.1/json/simple.json")
             .build()
 
         client.newCall(request).enqueue(object : Callback {

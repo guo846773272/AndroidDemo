@@ -24,6 +24,11 @@
                                 <LayoutPositions />
                               </value>
                             </entry>
+                            <entry key="action_FirstFragment_to_GsonFragment">
+                              <value>
+                                <LayoutPositions />
+                              </value>
+                            </entry>
                             <entry key="action_FirstFragment_to_MagicIndicatorFragment">
                               <value>
                                 <LayoutPositions />
@@ -79,7 +84,7 @@
                       </LayoutPositions>
                     </value>
                   </entry>
-                  <entry key="GFragment">
+                  <entry key="GridLayoutFragment">
                     <value>
                       <LayoutPositions>
                         <option name="myPosition">
@@ -91,7 +96,7 @@
                       </LayoutPositions>
                     </value>
                   </entry>
-                  <entry key="GridLayoutFragment">
+                  <entry key="GsonFragment">
                     <value>
                       <LayoutPositions>
                         <option name="myPosition">

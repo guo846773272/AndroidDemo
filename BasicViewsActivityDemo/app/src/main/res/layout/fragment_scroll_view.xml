@@ -48,12 +48,7 @@
                 android:paddingTop="100dp"
                 android:paddingBottom="100dp"/>
 
-            <LinearLayout
-                android:id="@+id/RecyclerViewGridLayoutFragment11"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content" />
-
-<!--            <include layout="@layout/fragment_recycler_view_grid_layout"/>-->
+            <include layout="@layout/fragment_recycler_view_grid_layout"/>
         </LinearLayout>
     </ScrollView>
 
