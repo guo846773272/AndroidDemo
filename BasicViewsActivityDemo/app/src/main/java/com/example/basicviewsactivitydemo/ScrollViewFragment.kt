@@ -46,7 +46,7 @@ class ScrollViewFragment : Fragment() {
         // 创建并加载 NestedFragment
         val nestedFragment = RecyclerViewGridLayoutFragment()
         childFragmentManager.beginTransaction()
-            .replace(R.id.RecyclerViewGridLayoutFragment11, nestedFragment)
+            .replace(R.id.RecyclerViewGridLayoutFragment, nestedFragment)
             .commit()
 
         return binding.root

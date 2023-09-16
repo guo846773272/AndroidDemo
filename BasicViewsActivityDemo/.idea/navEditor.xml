@@ -44,6 +44,11 @@
                                 <LayoutPositions />
                               </value>
                             </entry>
+                            <entry key="action_FirstFragment_to_PrinterFragment">
+                              <value>
+                                <LayoutPositions />
+                              </value>
+                            </entry>
                             <entry key="action_FirstFragment_to_RecyclerViewGridLayoutFragment">
                               <value>
                                 <LayoutPositions />
@@ -133,6 +138,18 @@
                     </value>
                   </entry>
                   <entry key="PopBackInterceptFragment">
+                    <value>
+                      <LayoutPositions>
+                        <option name="myPosition">
+                          <Point>
+                            <option name="x" value="12" />
+                            <option name="y" value="12" />
+                          </Point>
+                        </option>
+                      </LayoutPositions>
+                    </value>
+                  </entry>
+                  <entry key="PrinterFragment">
                     <value>
                       <LayoutPositions>
                         <option name="myPosition">

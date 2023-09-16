@@ -180,6 +180,13 @@ class FirstFragment : Fragment() {
             }
             mArr.add(model9)
 
+            val model10 = FirstRecyclerViewCellModel()
+            model10.str = "Printer"
+            model10.didClickCallback = {
+                it.findNavController().navigate(R.id.action_FirstFragment_to_PrinterFragment)
+            }
+            mArr.add(model10)
+
         }
 
         binding.recyclerView.adapter = FirstRecyclerViewAdapter(mArr.toTypedArray())

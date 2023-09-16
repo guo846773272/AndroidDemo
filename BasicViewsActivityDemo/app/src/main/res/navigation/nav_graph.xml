@@ -63,6 +63,10 @@
             android:id="@+id/action_FirstFragment_to_GsonFragment"
             app:destination="@id/GsonFragment" />
 
+        <action
+            android:id="@+id/action_FirstFragment_to_PrinterFragment"
+            app:destination="@id/PrinterFragment" />
+
     </fragment>
     <fragment
         android:id="@+id/SecondFragment"
@@ -150,6 +154,13 @@
         android:name="com.example.basicviewsactivitydemo.GsonFragment"
         android:label="@string/gson_fragment_label"
         tools:layout="@layout/fragment_gson">
+    </fragment>
+
+    <fragment
+        android:id="@+id/PrinterFragment"
+        android:name="com.example.basicviewsactivitydemo.PrinterFragment"
+        android:label="@string/printer_fragment_label"
+        tools:layout="@layout/fragment_printer">
     </fragment>
 
 </navigation>

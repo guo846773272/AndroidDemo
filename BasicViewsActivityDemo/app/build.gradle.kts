@@ -65,4 +65,6 @@ dependencies {
     implementation("io.github.scwang90:refresh-layout-kernel:2.0.6")      //核心必须依赖
     implementation("io.github.scwang90:refresh-header-classics:2.0.6")    //经典刷新头
     implementation("com.google.code.gson:gson:2.10.1")
+    // 打印机
+    implementation(files("libs/zpSDK.jar"))
 }
